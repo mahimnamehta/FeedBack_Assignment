@@ -1,13 +1,21 @@
-# This is a README file
-## .md means Markdown
+# Webpack example
 
-# Task 15 min
+## how to install the dependencies
 
-1) Fork this repository in you github account
-2) clone this repository in you machine
-3) open this project in your vscode
-4) start contribuite
-5) add your first name + last name in the index.html (continue with the list)
-6) create a simple html file  your-first-name-last-name.html with your name as a title and your last professional or educational  experience 
-7) commit the changes to your forked repository
-8) create a pull request to the original repository
+```bash
+npm install
+```
+
+## how to build
+```bash
+npm run build
+```
+
+## how to run de development server
+```bash
+npm run start
+```
+
+to access go to your browser and access the addres http://localhost:9000
+
+> if you receive some error here, this will be YOUR homework, discover why.
