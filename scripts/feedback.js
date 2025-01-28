@@ -15,7 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('Please fill out all fields before submitting.');
         return;
       }
-  
+      const data = {'name':name,'email':email,'rating':rating,"comments":comments};
+      // localStorage.set('form-data', data);
+      window.localStorage.setItem('form-data',JSON.stringify(data));
+      
       // Display thank-you message
       thankYouMessage.classList.remove('hidden');
       feedbackForm.reset();
