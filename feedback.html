@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feedback Form</title>
+    <title>Feedback Page</title>
+    <link rel="stylesheet" href="./styles/styles.css">  
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -135,26 +136,5 @@
         </form>
         <p id="thankYouMessage" class="hidden">Thank you for your feedback!</p>
     </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const feedbackForm = document.getElementById("feedbackForm");
-            const thankYouMessage = document.getElementById("thankYouMessage");
-
-            feedbackForm.addEventListener("submit", function (event) {
-                event.preventDefault(); // Prevent the default form submission
-
-                const rating = document.querySelector('input[name="rating"]:checked');
-                const ratingValue = rating ? rating.value : "No rating";
-
-                console.log(`Rating Selected: ${ratingValue}`);
-
-                thankYouMessage.textContent = `Thank you for your feedback! ${ratingValue} stars.`;
-                thankYouMessage.classList.remove("hidden");
-
-                feedbackForm.reset();
-            });
-        });
-    </script>
 </body>
 </html>
